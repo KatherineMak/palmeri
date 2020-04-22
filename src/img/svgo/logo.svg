@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="94px" height="120px" viewBox="0 0 94 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Стр.-Главная" transform="translate(-103.000000, 0.000000)">
+            <g id="Group-3" transform="translate(103.000000, -67.000000)">
+                <polygon id="Rectangle" fill="#1A1A76" points="17.0073433 0 100 0 82.9926567 187 -1.72249239e-14 187"></polygon>
+                <g id="Group" transform="translate(31.000000, 111.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M14.1500373,27.9999942 C12.6656898,28.0012715 11.1886402,27.791622 9.76287634,27.3772894 L11.2493158,22.2435951 C12.1868898,22.5185185 13.1588228,22.6574993 14.1356059,22.656318 C19.3886539,22.656318 23.6531475,18.7680333 23.6531475,13.9674137 C23.6531475,9.16679407 19.4030853,5.34367616 14.1500373,5.34367616 C9.93605374,5.34367616 6.27768102,7.80553239 5.05100771,11.462113 L0,9.75329511 C1.96267728,3.9172477 7.64866882,0 14.1500373,0 C22.3687484,0 29,6.27773338 29,13.9963767 C29,21.7150201 22.3687484,27.9999942 14.1500373,27.9999942 Z" id="Path"></path>
+                    <rect id="Rectangle" x="8" y="5" width="5" height="29"></rect>
+                    <polygon id="Path" points="25 48 3 48 3 42 25 42"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

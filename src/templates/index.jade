@@ -1,0 +1,386 @@
+---
+title: Index Page
+---
+extends layouts/_layout
+block content
+  .pop-up.active
+    .btn.btn-close
+    .line1
+    .line2
+    .container-main
+      h3 Переходим к действиям
+        .dots
+      p Заполните форму, и мы свяжется с вами для обсуждения всех деталей проекта.
+      form#popup
+        .block
+          .input
+            input(type="text" placeholder="Ваше имя" id="firstname" name="firstname")
+            label(for="firstname")
+          .input
+            input(type="email" placeholder="Телефон или почта *" id="e-mail" name="e-mail")
+            label(for="e-mail")
+            .hint
+              p Поле обязательное для заполнения
+          .textarea
+            textarea(placeholder="Опишите ваш проект" id="about-project" name="about-project" rows="5" cols="55")
+            label(for="about-project")
+        .block
+          .policy
+            p Нажимая на кнопку, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь c <a href="#"> политикой конфиденциальности</a>
+          button.btn.btn-secondary.btn-pop-up
+            span.sp-btn
+              span.sp-content Отправить
+
+    //.container-main
+      .success
+        .dots
+        .success_img
+          img(src="img/success.svg", alt="")
+        h3 Ю-ху! Сообщение отправлено!
+        p Зачимость этих проблем настолько очевидна, что укрепление и развитие структуры позволяет оценить значение модели развития. Разнообразный и богатый опыт дальнейшее развитие различных форм.
+        button.btn.btn-secondary.btn-form.close
+          span.sp-btn
+            span.sp-content Закрыть
+  section.intro
+    .container
+      .container-main
+        .content
+          h1 Улучшаем <br> реальные проекты <br> и создаем новые
+          p Ведение и продвижение <br> Instagram-аккаунтов личностей и брендов.
+          a.btn.btn-secondary(href="#")
+            span.sp-btn
+              span.sp-content Связаться с нами
+        .image
+          img(src="img/intro.png", alt="")
+        .intro-bottom
+          a(href="#services")
+            //i.icon.icon-arrow-down
+
+  section.services#services
+    .line1
+    .line2
+    .line3
+    .container-main
+      .heading
+        h2 Мы создаем не просто контент
+      .content
+        .service
+          .image
+            img(src="img/service/1.png", alt="1")
+          h3 Погружаемся в ваш бизнес
+          p Анализируем ваш бизнес, выделяем основные преимущества и выгоды для клиента.
+        .service
+          .image
+            img(src="img/service/2.png", alt="2")
+          h3 Привлекаем аудиторию
+          p Качественный контент жизненно необходим для успешного ведения безнеса в соцсетях, мы, как никто другой, убедились в этом,
+            | благодаря 5-х летнему опыту нашей команды.
+        .service
+          .image
+            img(src="img/service/3.png", alt="3")
+          h3 Исследуем рынок и конкурентов
+          p Изучаем конкурентов и целевую аудиторию,
+            | продумываем стратегию продвижения вашего
+            | аккаунта и привлечения новых клиентов.
+        .service
+          .image
+            img(src="img/service/4.png", alt="4")
+          h3 Создаем «вкусную» упаковку
+          p Качественный контент жизненно необходим для успешного ведения безнеса в соцсетях, мы, как никто другой, убедились в этом,
+            | благодаря 5-х летнему опыту нашей команды.
+  section.numbers
+    .line1
+    .container-main
+      .content
+        .number
+          h3
+            | 3 года
+          p продуктивной <br> работы
+        .number
+          h3 11 тыс.
+          p опубликованых <br> постов
+        .number
+          h3 1.1 млн
+          p кликов и переходов <br> на рекламу
+        .number
+          h3 4 дня
+          p со старта кампании <br> до лидов
+        .number
+          h3 68%
+          p клиентов работают с <br> нами более 2 лет
+        .number
+          h3 4.5 тыс
+          p разработаннных <br> баннеров
+
+  section.cases
+    .container-main
+      .heading
+        h2 Наши кейсы
+      .content
+        .case
+          .image
+            img(src="img/cases/smartlife.png", alt="")
+            .line
+          .block
+            h3 Smartlifebio
+            h4 Логотип, брендинг, полное ведение и продвижение Instagram-аккаунта
+            p Натуральные продукты для здоровья и долголетия
+            a.btn.btn-pink(href="#")
+              span.sp-content Подробнее
+              span.sp-arrow
+        .case
+          .image
+            img(src="img/cases/baranienbaum.png", alt="")
+            .line
+          .block
+            h3 Baranienbaum
+            h4 Стратегия, полное ведение и продвижение Instagram-аккаунта
+            p Интернет-магазин премиального<br>мяса в Москве, Санкт-Петербурге, Екатеренбурге и Самаре
+            a.btn.btn-pink(href="#")
+              span.sp-content Подробнее
+              span.sp-arrow
+        .case
+          .image
+            img(src="img/cases/sunlook.png", alt="")
+            .line
+          .block
+            h3 Sunlook shop
+            h4 Дизайн упаковок, фотосессия, оформление Instagram-аккаунта
+            p Интернет-магазин материалов для наращивания ресниц
+            a.btn.btn-pink(href="#")
+              span.sp-content Подробнее
+              span.sp-arrow
+        .case
+          .image
+            img(src="img/cases/honeyway.png", alt="")
+            .line
+          .block
+            h3 HoneyWay Твёрдый мёд
+            h4 Стратегия, полное ведение и продвижение Instagram-аккаунта
+            p Натуральные эко-пастилки из Алтайского мёда
+            a.btn.btn-pink(href="#")
+              span.sp-content Подробнее
+              span.sp-arrow
+        .case
+          .image
+            img(src="img/cases/hair.png", alt="")
+            .line
+          .block
+            h3 Hair & Skin
+            h4 Полное ведение и продвижение Instagram-аккаунта
+            p Инновационный Институт HAIR & SKIN специализируется на оздоровлении  волос и кожи головы
+            a.btn.btn-pink(href="#")
+              span.sp-content Подробнее
+              span.sp-arrow
+        .button
+          a.btn.btn-secondary(href="#")
+            span.sp-btn
+             span.sp-content Больше кейсов
+  section.form
+    .container
+      .line1
+      .line2
+      .container-main
+        .dots
+        h3 Создадим мощный инстаграм вместе
+        p Заполните форму, и мы свяжется с вами для обсуждения <br> всех деталей проекта.
+        form#top
+          .block
+            .input
+              input(type="text" placeholder="Ваше имя" id="name" name="name")
+              label(for="name")
+            .input
+              input(type="email" placeholder="Телефон или почта" id="email" name="email")
+              label(for="email")
+            button.btn.btn-secondary.btn-form
+              span.sp-btn
+                span.sp-content Отправить
+          .block
+            .policy
+              p Нажимая на кнопку, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь c <a href="#"> политикой конфиденциальности</a>
+  section.hello
+    .container-main
+      .heading
+        h2 Знакомьтесь, Palmeri
+        p Команда людей горящих каждым проектом
+      .content
+        .human
+          .image
+            img(src="img/human/1.png", alt="")
+            .line1
+          h3 Дмитрий Картье
+          p Основатель и руководитель<br>отдела маркетинга 
+        .human
+          .image
+            img(src="img/human/2.png", alt="")
+            a.inst(href="#")
+          h3 Дарья Картье
+          p Основатель и арт-директор 
+        .human
+          .image
+            img(src="img/human/3.png", alt="")
+          h3 Любовь Калугина
+          p Руководитель проектов
+        .human
+          .image
+            img(src="img/human/4.png", alt="")
+          h3 Лидия Ломейко
+          p Графический дизайнер
+        .human
+          .image
+            img(src="img/human/5.png", alt="")
+          h3 Андрей Гросюков 
+          p Web-дизайнер
+        .human
+          .image
+            img(src="img/human/6.png", alt="")
+            .line2
+          h3 Ася Дудина
+          p Фотограф
+        .human
+          .image
+            img(src="img/human/7.png", alt="")
+          h3 Анастасия Гутова 
+          p Копирайтер и контент-<br>менеджер
+        .human
+          .image
+            img(src="img/human/8.png", alt="")
+          h3 Вероника Рудых
+          p Контент-менеджер
+        .human
+          .image
+            img(src="img/human/9.png", alt="")
+          h3 Елена Отинова
+          p Таргетолог
+      .team.swiper-container-hello
+        .swiper-wrapper
+          .swiper-slide
+            .block
+              div
+                .human
+                  .image
+                    img(src="img/human/1.png", alt="")
+                    .line1
+                  h3 Дмитрий Картье
+                  p Основатель и руководитель<br>отдела маркетинга
+          .swiper-slide
+            .block
+              div
+                .human
+                  .image
+                    img(src="img/human/2.png", alt="")
+                    a.inst(href="#")
+                  h3 Дарья Картье
+                  p Основатель и арт-директор
+          .swiper-slide
+            .block
+              div
+                .human
+                  .image
+                    img(src="img/human/3.png", alt="")
+                  h3 Любовь Калугина
+                  p Руководитель проектов
+          .swiper-slide
+            .block
+              div
+                .human
+                  .image
+                    img(src="img/human/4.png", alt="")
+                  h3 Лидия Ломейко
+                  p Графический дизайнер
+          .swiper-slide
+            .block
+              div
+                .human
+                  .image
+                    img(src="img/human/5.png", alt="")
+                  h3 Андрей Гросюков
+                  p Web-дизайнер
+          .swiper-slide
+            .block
+              div
+                .human
+                  .image
+                    img(src="img/human/6.png", alt="")
+                    .line2
+                  h3 Ася Дудина
+                  p Фотограф
+          .swiper-slide
+            .block
+              div
+                .human
+                  .image
+                    img(src="img/human/7.png", alt="")
+                  h3 Анастасия Гутова
+                  p Копирайтер и контент-<br>менеджер
+          .swiper-slide
+            .block
+              div
+                .human
+                  .image
+                    img(src="img/human/8.png", alt="")
+                  h3 Вероника Рудых
+                  p Контент-менеджер
+          .swiper-slide
+            .block
+              div
+                .human
+                  .image
+                    img(src="img/human/9.png", alt="")
+                  h3 Елена Отинова
+                  p Таргетолог
+        .prev
+          span.arrow
+        .next
+          span.arrow
+  section.clients
+    .line1
+    .container-main
+      .heading
+        .block
+          h2 Клиенты
+          p Мнения клиентов, о нашей работе
+    .review.swiper-container
+      .swiper-wrapper
+        .swiper-slide
+          .block
+            div.content
+              h3 Андрей Котельников
+              h4 Совладелец Бараниенбаум
+              p "Друзья, мне 39 лет и я основатель многих бизнесов. Основываясь на своем опыте, скажу, что успешность любого бизнеса зависит от команды, горящей проектом. Ведь все мы работаем не с компанией, а с конкретными людьми. А теперь представьте, что в вашей команде появляются люди, которые настолько вовлечены в процесс, что  работают ночью и им не надо об этом говорить! Работа в выходной день? Пожалуйста! А знаете почему так - потому что вы нашли клад и клад этот стоит в отношении к вашему бизнеу, как к собственному. Дима и Даша яркие представители этого умирающего вида. Я очень рад нашему 5-летнему сотрудничеству. Вместе мы реализовали 4 крупный проекта с общим годовым оборотом более 200 млн руб. и на выходе еще два стартапа. <br> Всячески рекомендую их всем!"
+            .logo
+              img(src="img/review-baranenbaum.svg", alt="")
+            .photo
+              img(src="img/review-baranenbaum-photo.png", alt="")
+          .pagination
+            .prev
+              span.arrow
+            .next
+              span.arrow
+              span.more ещё отзывы
+            .line2
+  section.check
+    .line1
+    .line2
+    .dotts
+    .container-main
+      form#bottom
+        h2 Проверьте свой аккаунт<br> самостоятельно
+        p Получите бесплатно «Чек-лист по проверке интаграм-профиля на визуальную чать» на свой E-mail прямо сейчас:
+        .block
+          .input
+            input(type="email" placeholder="Ваша почта" id="check" name="email")
+            label(for="check")
+          button.btn.btn-secondary.btn-form
+            span.sp-btn
+              span.sp-content Отправить
+  .thank
+    .block
+      .close
+        img(src="img/close.svg", alt="")
+      img(src="img/thank.svg", alt="")
+      h2 Ю-ху! Сообщение отправлено!
+      p Зачимость этих проблем настолько очевидна, что укрепление и развитие структуры позволяет оценить значение модели развития. Разнообразный и богатый опыт дальнейшее развитие различных форм.
+      button.btn.btn-secondary.btn-form
+        span.sp-btn
+          span.sp-content Закрыть

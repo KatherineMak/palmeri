@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="63px" viewBox="0 0 58 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 13</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Стр.-Главная" transform="translate(-1157.000000, -7824.000000)" fill-rule="nonzero">
+            <g id="button_forward-copy" transform="translate(1157.000000, 7824.000000)">
+                <g id="Group-13">
+                    <polygon id="Path" fill="#27227C" points="4.24781558 3.73771239 58 0 53 60 0 63"></polygon>
+                    <g id="right-arrow-copy-7" transform="translate(22.000000, 24.000000)" fill="#FFFFFF">
+                        <path d="M9.63057792,0.710550086 C9.36490149,0.429816638 8.92272673,0.429816638 8.64776092,0.710550086 C8.38208449,0.981799295 8.38208449,1.43324903 8.64776092,1.70386596 L13.6312067,6.79184356 L0.688033829,6.79690182 C0.304691849,6.7975341 0,7.10861711 0,7.5 C0,7.89138289 0.304691849,8.21258242 0.688033829,8.21258242 L13.6312067,8.20752416 L8.64776092,13.2860175 C8.38208449,13.566751 8.38208449,14.018833 8.64776092,14.2894499 C8.92272673,14.5701834 9.36552078,14.5701834 9.63057792,14.2894499 L15.7937756,7.99697408 C16.0687415,7.72572487 16.0687415,7.27427513 15.7937756,7.00365821 L9.63057792,0.710550086 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

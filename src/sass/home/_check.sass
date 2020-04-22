@@ -1,0 +1,197 @@
+.check
+  position: relative
+  padding-bottom: 370px
+  +r($xs)
+    margin-top: 120px
+    text-align: center
+    padding-bottom: 150px
+  +r($md)
+    margin-top: 220px
+    padding-bottom: 400px
+  .line1
+    display: block
+    background-color: $blue
+    transform: rotate(-41deg)
+    position: absolute
+    top: -130px
+    left: 10%
+    +r($xs)
+      display: none
+    +r($sm)
+      left: 2%
+    +r($md)
+      left: 15%
+  .line2
+    display: block
+    background-color: #4299F7
+    transform: rotate(-118deg)
+    position: absolute
+    top: 250px
+    right: 10%
+    +r($xs)
+      display: none
+    +r($sm)
+      right: 0
+    z-index: 1
+    +r($md)
+      top: 22%
+      right: 7%
+  .dotts
+    background-image: url('../img/check-dots.svg')
+    background-size: contain
+    background-repeat: no-repeat
+    width: 205px
+    height: 373px
+    position: absolute
+    top: 0
+    right: 150px
+    +r($md)
+      top: -30px
+      right: 50px
+      width: 154px
+      height: 300px
+    +r($sm)
+      right: -30px
+    +r($xs)
+      top: 20px
+      right: -70px
+  .container-main
+    display: flex
+    height: 100%
+    align-items: center
+  &:before
+    content: ''
+    width: 1575px
+    height: 710px
+    background-image: url('../img/check-bg-pink.svg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: left top
+    display: block
+    position: absolute
+    top: -100px
+    left: 0
+    z-index: -2
+    +r($md)
+      background-image: url('../img/check-bg-pink-1440.svg')
+      background-size: contain
+      width: 100%
+      height: 650px
+      left: 0
+    +r(1550)
+      width: 1182px
+      height: 580px
+    +r($sm)
+      left: -100px
+    +r($xs)
+      top: -80px
+      left: -200px
+      height: 200px
+  &:after
+    content: ''
+    background-image: url('../img/check-bg-blue.svg')
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: top right
+    width: 1600px
+    height: 950px
+    display: block
+    position: absolute
+    top: 0
+    right: 0
+    z-index: -1
+    +r($md)
+      background-image: url('../img/check-bg-blue-1440.svg')
+      top: -20px
+      background-size: contain
+      width: 100%
+      height: 110%
+      //right: -100px
+    +r(1550)
+      width: 1342px
+      height: 722px
+      right: 0
+    +r($sm)
+      left: 80px
+      width: 1382px
+      height: 822px
+    +r($xs)
+      left: -100px
+      top: -50px
+      background-image: url('../img/check-bg-blue-sm.svg')
+      height: 100%
+      background-size: cover
+  form
+    flex-direction: column
+    align-items: flex-start
+    padding-left: 280px
+    +r($xs)
+      padding-left: 0
+    +r($md)
+      padding-left: 180px
+      padding-top: 50px
+    +r(1550)
+      padding-top: 0
+    h2
+      font-size: 58.6667px
+      line-height: 59px
+      padding-top: 210px
+      font-weight: 800
+      color: #f8f8f8
+      margin-bottom: 25px
+      +r($md)
+        padding-top: 100px
+        font-size: 44px
+        line-height: 44px
+      +r($sm)
+        padding-top: 150px
+      +r($xs)
+        padding-top: 70px
+        margin: 0 auto 25px
+        font-size: 28px
+        line-height: 30px
+        width: 90%
+    p
+      font-size: 24px
+      line-height: 32px
+      +r($md)
+        font-size: 18px
+        line-height: 24px
+      font-weight: 500
+      letter-spacing: 0.02em
+      color: rgba($white, 0.5)
+      margin-bottom: 35px
+      +r($md)
+        margin-bottom: 45px
+      +r($xs)
+        margin: 0 auto 35px
+        font-size: 18px
+        width: 90%
+    button
+      top: 10px
+      +r($xs)
+        margin-top: 30px
+    .block
+      display: flex
+      flex-wrap: wrap
+      justify-content: flex-start
+      +r($xs)
+        justify-content: center
+        width: 300px
+        margin: 0 auto
+      .input
+        margin-right: 40px
+        +r($xs)
+          margin-right: 0
+      .policy
+        width: 100%
+        margin-left: 5px
+        margin-top: 35px
+        p
+          font-size: 12px
+          font-weight: 500
+          font-stretch: normal
+          font-style: normal
+          line-height: normal
+          letter-spacing: normal
+          color: rgba($white, 0.3)

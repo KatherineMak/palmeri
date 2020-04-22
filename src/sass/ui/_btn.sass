@@ -1,0 +1,168 @@
+.btn
+  text-decoration: none
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: 0.3s
+  &-primary
+    width: 225px
+    height: 70px
+    +r($md)
+      width: 170px
+      height: 52px
+      font-size: 16px
+      line-height: 16px
+    +r($xs)
+      font-size: 14px
+      line-height: 14px
+    font-weight: bold
+    line-height: 18px
+    text-align: center
+    letter-spacing: 0.02em
+    font-size: 18px
+    background: $pink-dark
+    position: relative
+    color: $white
+    transform: skew(-5deg)
+    span
+      transform: skew(5deg)
+    &:hover
+      opacity: 0.8
+
+  &-secondary
+    width: 280px
+    height: 75px
+    +r($md)
+      width: 194px
+      height: 56px
+    background-color: $blue
+    display: inline-block
+    z-index: 10
+    margin-left: 20px
+    position: relative
+    transform: skew(-5deg)
+    span.sp-btn
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 18px
+      line-height: 18px
+      letter-spacing: 0.02em
+      font-weight: bold
+      color: $white
+      width: 280px
+      height: 75px
+      +r($md)
+        font-size: 16px
+        line-height: 16px
+        width: 194px
+        height: 56px
+      +r($xs)
+        font-size: 14px
+        line-height: 14px
+      background-color: $pink-dark
+      position: relative
+      top: -10px
+      left: -10px
+      transition: all 0.5s
+      span.sp-content
+        transform: skew(5deg)
+      &:hover
+        transform: translateY(10px) translateX(10px)
+
+  &-form
+    background-color: $white
+
+  &-pop-up
+    background-color: #2B2B7C
+    .sp-content
+      color: rgba(white, 0.5)
+
+  &-pink
+    width: 225px
+    height: 70px
+    +r($md)
+      width: 170px
+      height: 52px
+      font-size: 16px
+      line-height: 16px
+    +r($xs)
+      font-size: 14px
+      line-height: 14px
+    letter-spacing: 0.02em
+    font-size: 18px
+    line-height: 18px
+    background-color: $pink-light
+    color: $pink-dark
+    font-weight: bold
+    z-index: 10
+    padding-right: 20px
+    position: relative
+    transform: skew(-5deg)
+    display: flex
+    .sp-content
+      transform: skew(5deg)
+      position: absolute
+      z-index: 10
+    .sp-arrow
+      position: absolute
+      width: 20px
+      height: 14px
+      background-image: url("..//img/more-arrow.svg")
+      background-repeat: no-repeat
+      background-size: contain
+      right: 40px
+      +r($md)
+        right: 25px
+        top: 40%
+        width: 14px
+        height: 10px
+      +r($xs)
+        right: 35px
+    &:hover
+      background-color: $pink-dark
+      color: $white
+      .sp-arrow
+        width: 20px
+        height: 14px
+        background-image: url("..//img/arrow-white.svg")
+        background-repeat: no-repeat
+        background-size: contain
+        +r($md)
+          width: 14px
+          height: 10px
+  &-close
+    position: absolute
+    width: 77px
+    height: 70px
+    background-image: url(../img/close.svg)
+    background-repeat: no-repeat
+    background-size: contain
+    top: 56px
+    right: 67px
+    +r($md)
+      height: 52px
+      width: 58px
+      right: 57px
+    +r($sm)
+      top: 36px
+    +r($xs)
+      top: 20px
+      right: 30px
+.lang
+  display: block
+  text-decoration: none
+  font-weight: bold
+  line-height: 21px
+  letter-spacing: 0.02em
+  font-size: 19px
+  color: rgba($blue, 0.3)
+  margin-right: 15px
+  +r($md)
+    font-size: 14px
+    line-height: 16px
+  +r($xs)
+    display: none
+  &.is-active
+    color: $blue
+    border-bottom: 2px solid

@@ -1,0 +1,125 @@
+form
+  display: flex
+  .input
+    position: relative
+    +r($xs)
+      margin-bottom: 10px
+    label
+      display: block
+      top: 0
+      left: 0
+      transform: skew(-5deg)
+      background: $blue-light
+      position: absolute
+      height: 100%
+      width: 100%
+      z-index: 1
+      &:nth-of-type(1)
+        margin-left: 10px
+        +r($xs)
+          margin-left: 0
+    input
+      z-index: 2
+      position: relative
+      background: none
+      height: 75px
+      width: 420px
+      padding: 0 40px
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 20px
+      letter-spacing: 0.02em
+      color: $white
+      margin: 0 20px
+      +r($md)
+        font-size: 16px
+        line-height: 16px
+        height: 58px
+        width: 330px
+      +r($sm)
+        width: 300px
+      +r($xs)
+        width: 260px
+        text-align: center
+        padding: 0
+        font-size: 14px
+        line-height: 14px
+        margin: 0
+      &:focus
+        color: $blue
+      &:focus + label
+        background: $white
+        color: $blue
+      &::placeholder
+        color: rgba(white, 0.5)
+        font-weight: 500
+        font-size: 19px
+        font-family: Gilroy
+        +r($md)
+          font-size: 16px
+  .textarea
+    position: relative
+    width: 95%
+    +r($xs)
+      width: 100%
+    label
+      display: block
+      top: 0
+      left: 0
+      transform: skew(-5deg)
+      background: $blue-light
+      position: absolute
+      height: 100%
+      width: 100%
+      z-index: 1
+      &:nth-of-type(1)
+        margin-left: 10px
+        +r($xs)
+          margin-left: 0
+    textarea
+      resize: none
+      z-index: 2
+      position: relative
+      background: none
+      width: 95%
+      height: 150px
+      padding: 25px
+      font-style: normal
+      font-weight: 500
+      font-size: 20px
+      line-height: 24px
+      letter-spacing: 0.02em
+      margin: 0 20px
+      border: transparent
+      color: $white
+      +r($md)
+        height: 110px
+      +r(1105)
+        width: 99%
+      +r($xs)
+        text-align: center
+        margin: 0
+      &:focus
+        color: $white
+      &:focus + label
+        background: #373783
+        color: $white
+      &::placeholder
+        color: rgba(white, 0.5)
+        font-weight: 500
+        font-size: 19px
+        font-family: Gilroy
+        +r($md)
+          font-size: 16px
+  .policy
+    p, a
+      font-size: 12px
+      font-weight: 500
+      font-stretch: normal
+      font-style: normal
+      line-height: normal
+      letter-spacing: normal
+      color: rgba($white, 0.3)
+      +r($xs)
+        margin-bottom: 50px

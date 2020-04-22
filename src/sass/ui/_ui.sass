@@ -1,0 +1,209 @@
+body
+  font-family: 'Gilroy'
+.out
+  overflow: hidden
+.container
+  max-width: 1800px
+  +r($md)
+    max-width: 1340px
+  +r(1120)
+    max-width: 1000px
+  +r(767)
+    max-width: 310px
+  width: 100%
+  display: flex
+  margin: 0 auto
+  overflow: hidden
+.container-main
+  max-width: 1320px
+  +r($md)
+    max-width: 1000px
+  +r(1120)
+    width: 96%
+  width: 90%
+  margin: 0 auto
+.heading
+  position: relative
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    z-index: -1
+    width: 205px
+    height: 373px
+    +r($md)
+      width: 155px
+      height: 280px
+
+  h2
+    font-size: 59px
+    line-height: 59px
+    +r($md)
+      font-size: 44px
+      line-height: normal
+    +r(767)
+      font-size: 28px
+      line-height: 30px
+      margin: 20px auto
+    font-weight: 800
+    font-stretch: normal
+    font-style: normal
+    letter-spacing: normal
+    color: $blue
+    margin-bottom: 20px
+  h3
+    font-size: 58px
+    line-height: 59px
+    +r($md)
+      font-size: 28px
+    +r(767)
+      width: 80%
+      margin: 0 auto
+  p
+    font-size: 20px
+    +r(767)
+      font-size: 18px
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    color: $blue
+
+.line1, .line2, .line3, .line
+  width: 18px
+  height: 178px
+  +r($md)
+    width: 11px
+    height: 133px
+
+.prev, .next
+  background-color: #DADCE6
+  transform: skew(0, -5deg)
+  width: 80px
+  height: 80px
+  cursor: pointer
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 10
+  +r($md)
+    width: 60px
+    height: 60px
+  .arrow
+    background-image: url('..//img/prev-arrow.svg')
+    background-repeat: no-repeat
+    width: 20px
+    height: 16px
+    +r($md)
+      width: 14px
+      height: 10px
+      background-size: contain
+  &:hover
+    background-color: $blue
+    .arrow
+      background-image: url('..//img/next-arrow.svg')
+      background-repeat: no-repeat
+      width: 20px
+      height: 16px
+      +r($md)
+        background-size: contain
+        width: 14px
+        height: 10px
+
+.thank
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  background: #9FA5C0
+  opacity: 0
+  visibility: hidden
+  &.active
+    visibility: visible
+    opacity: 1
+    z-index: 1000
+  .close
+    position: absolute
+    right: 13%
+    top: 10%
+    cursor: pointer
+  .block
+    background: #1A1A76
+    width: 70%
+    padding: 50px
+    color: $white
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    h2
+      font-family: 800
+      font-size: 44px
+      line-height: 44px
+      margin-bottom: 20px
+    p
+      font-weight: 500
+      font-size: 18px
+      line-height: 24px
+      text-align: center
+      letter-spacing: 0.02em
+      color: #FFFFFF
+      opacity: 0.5
+      margin-bottom: 50px
+
+// social icons
+.social
+  +r($xs)
+    margin-left: 25%
+.row
+  position: relative
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  line-height: 21px
+  .social-icon
+    width: 30px
+    height: 30px
+    +r($md)
+      width: 22px
+      height: 22px
+  .whatsapp
+    background-image: url('..//img/whatsapp.svg')
+    background-size: cover
+    position: absolute
+    display: block
+    z-index: 1
+  .telegram
+    background-image: url('../img/telegram.svg')
+    background-size: cover
+    position: absolute
+    display: block
+    z-index: 1
+  .instagram
+    background-image: url('../img/instagram.svg')
+    background-size: cover
+    position: absolute
+    display: block
+    z-index: 1
+  .fb
+    background-image: url('../img/facebook.svg')
+    background-size: cover
+    position: absolute
+    display: block
+    z-index: 1
+  .vk
+    background-image: url('../img/vk.svg')
+    background-size: cover
+    position: absolute
+    display: block
+    z-index: 1
+  &:nth-of-type(2)
+    +r($xs)
+      margin-left: 40px

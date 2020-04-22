@@ -1,0 +1,289 @@
+.header
+  position: absolute
+  width: 100%
+  top: 0
+  z-index: 101
+  .container
+    display: flex
+    align-items: center
+    +r($md)
+      //padding: 0 30px
+    +r($sm)
+      padding: 0
+  .logo
+    display: flex
+    align-items: center
+    flex: 1
+    +r($sm)
+      margin-left: 20px
+    +r($xs)
+      padding-left: 20px
+      margin-left: 0
+    &__image
+      width: 135px
+      +r($md)
+        width: 95px
+      +r($xs)
+        width: 66px
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    h1
+      font-size: 20px
+      +r($md)
+        font-size: 15px
+        line-height: 17px
+      +r($xs)
+        font-size: 10px
+        line-height: 11px
+        font-weight: bold
+      font-style: normal
+      font-weight: bold
+      line-height: 23px
+      letter-spacing: normal
+      color: $blue
+      margin-left: 12px
+  .btn
+    margin-left: 30px
+    display: flex
+    +r($md)
+      margin-left: 15px
+    +r($xs)
+      display: none
+  .menu
+    transform: skew(-5deg)
+    margin: 0 5px 0 25px
+    +r($md)
+      width: 52px
+      height: 52px
+      padding: 10px 16px
+      margin-left: 15px
+    +r($sm)
+      margin: 0 25px 0 15px
+    cursor: pointer
+    background-color: $blue
+    width: 70px
+    height: 70px
+    position: relative
+    padding: 20px 24px
+    display: flex
+    align-items: center
+    .menu-content
+      transform: skew(5deg)
+    span
+      display: block
+      background-color: $white
+      margin: 6px 0
+      width: 24px
+      +r($md)
+        width: 20px
+      height: 2px
+    &:hover
+      opacity: 0.8
+    &.active
+      //+r()
+      //padding: 26px 18px
+      span
+        margin: 0
+        position: absolute
+        top: 0
+        left: 0
+        &:nth-of-type(1)
+          transform: rotate(-45deg)
+        &:nth-of-type(2)
+          transform: rotate(45deg)
+        &:nth-of-type(3)
+          display: none
+
+.menu-popup
+  position: fixed
+  z-index: 1
+  background-color: $white
+  opacity: 0
+  transition: all 0.3s
+  visibility: hidden
+  width: 100%
+  height: 100%
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    z-index: -2
+    background-image:  url(../img/menu-bg.svg)
+    background-repeat: no-repeat
+    background-position: right top
+    background-size: contain
+    width: 100%
+    height: 100%
+    top: 0
+    right: 0
+    +r($md)
+      width: 1075px
+      background-size: cover
+    +r($sm)
+      width: 805px
+      background-size: contain
+  &.active
+    opacity: 1
+    z-index: 100
+    visibility: visible
+  .container-main
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    padding-top: 340px
+    max-width: 1620px
+    +r($md)
+      padding-top: 255px
+      max-width: 1180px
+    +r($sm)
+      max-width: 840px
+    +r(1000)
+      width: 80%
+    +r($xs)
+      padding-top: 140px
+      margin: 0 auto
+      width: 300px
+      align-items: center
+    ul
+      li
+        a
+          display: flex
+          color: $blue
+          text-decoration: none
+          font-weight: 500
+          font-size: 48px
+          line-height: 58px
+          text-align: right
+          justify-content: flex-end
+          margin-bottom: 45px
+          +r($md)
+            font-size: 36px
+            line-height: 44px
+            margin-bottom: 30px
+          +r($xs)
+            justify-content: center
+            font-size: 28px
+            line-height: 34px
+          &:hover
+            color: $pink
+    .button
+      display: none
+      +r($xs)
+        display: flex
+        margin-top: 25px
+    .menu-flex
+      display: flex
+      justify-content: space-between
+      margin-top: 130px
+      +r($md)
+        margin-top: 100px
+      +r($xs)
+        margin-top: 55px
+        justify-content: center
+      li
+        +r($xs)
+          display: flex
+          justify-content: center
+        a
+          display: block
+          text-decoration: none
+          font-weight: 600
+          font-size: 21px
+          line-height: 21px
+          letter-spacing: 0.02em
+          color: $blue
+          opacity: 0.5
+          margin-bottom: 20px
+          +r($md)
+            font-size: 16px
+            line-height: 16px
+            margin-bottom: 15px
+        &:nth-of-type(2)
+          +r($xs)
+            .row
+              padding-right: 55px
+      .whatsapp
+        background-image: url('..//img/whatsapp-menu.svg')
+        top: -5px
+        left: 0
+        +r($xs)
+          right: 25px
+          left: auto
+      .telegram
+        background-image: url('../img/telegram-menu.svg')
+        top: -5px
+        left: 35px
+        +r($md)
+          left: 25px
+        +r($xs)
+          right: 0
+          left: auto
+      .instagram
+        background-image: url('../img/instagram-menu.svg')
+        top: 0
+        right: 0
+      .fb
+        background-image: url('../img/facebook-menu.svg')
+        top: 0
+        right: 35px
+        +r($md)
+          right: 30px
+      .vk
+        background-image: url('../img/vk-menu.svg')
+        top: 0
+        right: 70px
+        +r($md)
+          right: 60px
+      .row
+        padding-left: 75px
+        +r($md)
+          padding-left: 55px
+        +r($xs)
+          padding-left: 0
+      .social
+        +r($xs)
+          margin-left: 40%
+          display: flex
+          justify-content: center
+    .switch-lang
+      display: none
+      +r($xs)
+        display: flex
+        justify-content: center
+        margin-top: 65px
+      .lang
+       +r($xs)
+        display: flex
+  .line1
+    background-color: #AF78FF
+    transform: rotate(140deg)
+    position: absolute
+    top: 265px
+    right: 650px
+    display: block
+    +r($md)
+      top: 180px
+      right: 740px
+    +r($sm)
+      right: 600px
+    +r($xs)
+      top: 220px
+      right: -10px
+  .line2
+    background-color: $pink-dark
+    transform: rotate(-135deg)
+    position: absolute
+    bottom: 237px
+    right: 1060px
+    display: block
+    +r($md)
+      right: 1000px
+    +r($sm)
+      right: 770px
+      bottom: 170px
+    +r($xs)
+      bottom: 0
+      left: -10px
+      right: auto

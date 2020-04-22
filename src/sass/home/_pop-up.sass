@@ -1,0 +1,309 @@
+.pop-up
+  position: fixed
+  z-index: 1
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  background-color: $light-blue
+  background-image:  url(../img/pop-up-bg-blue.svg)
+  background-repeat: no-repeat
+  background-position-y: 35px
+  background-size: cover
+  opacity: 0
+  transition: all 0.3s
+  visibility: hidden
+  &.active
+    opacity: 1
+    visibility: visible
+    z-index: 102
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    width: 1200px
+    height: 150px
+    left: 0
+    bottom: 0
+    background-image:  url(../img/pop-up-bg-pink.svg)
+    background-repeat: no-repeat
+    background-size: contain
+    z-index: 2
+    +r($md)
+      width: 900px
+      height: 113px
+    +r($sm)
+      height: 90px
+    +r($xs)
+      left: -400px
+  h3
+    font-size: 59px
+    line-height: 59px
+    color: $white
+    position: relative
+    +r($md)
+      font-size: 44px
+      line-height: 44px
+    +r($xs)
+      font-size: 28px
+      line-height: 30px
+      text-align: center
+    .dots
+      content: ''
+      background-image: url(../img/form-dots.svg)
+      background-size: contain
+      background-repeat: no-repeat
+      height: 372px
+      width: 205px
+      position: absolute
+      left: -80px
+      top: -320px
+      +r($md)
+        height: 280px
+        width: 155px
+        top: -240px
+      +r($xs)
+        top: -140px
+        left: -35px
+  p
+      font-style: normal
+      font-weight: 500
+      font-size: 24px
+      line-height: 32px
+      letter-spacing: 0.02em
+      color: $white
+      opacity: 0.5
+      margin-top: 20px
+      +r($md)
+        font-size: 18px
+        line-height: 24px
+        margin-top: 15px
+      +r($xs)
+        text-align: center
+        width: 272px
+  .container-main
+    display: flex
+    flex-direction: column
+    height: 100%
+    justify-content: center
+    +r($sm)
+      width: 90%
+    +r(1105)
+      max-width: 1000px
+    +r(772)
+    +r($xs)
+      padding-top: 130px
+      align-items: center
+    .success
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      position: relative
+      +r($md)
+        justify-content: space-around
+      .dots
+        content: ''
+        background-image: url(../img/form-dots.svg)
+        background-size: contain
+        background-repeat: no-repeat
+        height: 372px
+        width: 205px
+        position: absolute
+        left: -80px
+        top: -300px
+        +r($md)
+          top: -200px
+          height: 280px
+          width: 155px
+        +r($sm)
+          left: 0
+        +r($xs)
+          top: -250px
+      .success_img
+        width: 172px
+        height: 172px
+        margin-bottom: 40px
+        img
+          object-fit: contain
+          width: 100%
+      h3, p
+        width: 860px
+        text-align: center
+        +r($sm)
+          width: 90%
+        +r($xs)
+          width: 300px
+    form
+      flex-direction: column
+      position: relative
+      overflow: scroll
+      padding-top: 65px
+      +r($md)
+        padding-top: 50px
+      +r($xs)
+        padding-top: 30px
+      +r($xs)
+        width: 100%
+      .block
+        display: flex
+        flex-wrap: wrap
+        +r($xs)
+          justify-content: center
+          flex-direction: column
+          width: 97%
+          margin: 0 auto
+        .input
+          position: relative
+          margin-bottom: 20px
+          width: 47%
+          +r($xs)
+            width: 100%
+          +r($md)
+            margin-bottom: 15px
+          &:nth-of-type(1)
+            margin-right: 25px
+            +r($md)
+              margin-right: 15px
+            +r($xs)
+              margin-right: 0
+          input
+            padding: 25px
+            width: 100%
+            +r($xs)
+              width: 100%
+            &:focus
+              color: $white
+            &:focus + label
+              background: #373783
+              color: $white
+            &::placeholder
+              font-weight: 500
+              color: rgba(white, 0.5)
+              font-family: Gilroy
+              +r($xs)
+                text-align: center
+          .textarea
+            width: 95%
+            +r($xs)
+              width: 100%
+            textarea
+              width: 100%
+              text-align: center
+              +r($xs)
+                margin: 0
+          .hint
+            position: absolute
+            background-color: #AF78FF
+            transform: skew(-5deg)
+            width: 240px
+            height: 75px
+            z-index: 3
+            display: flex
+            justify-content: center
+            align-items: center
+            top: -60px
+            right: 30px
+            +r($md)
+              width: 180px
+              height: 56px
+              top: -30px
+              right: 15px
+            +r($xs)
+              top: -45px
+              left: 50%
+              transform: translate(-50%, 0)
+            p
+              transform: skew(5deg)
+              font-weight: 500
+              font-size: 19px
+              line-height: 24px
+              letter-spacing: 0.02em
+              color: #FFFFFF
+              width: 183px
+              opacity: 1
+              margin: 0
+              +r($md)
+                width: 137px
+                font-size: 14px
+                line-height: 18px
+            &:before
+              content: ''
+              display: block
+              position: absolute
+              bottom: -35px
+              right: 40px
+              transform: rotate(20deg)
+              border: 20px solid transparent
+              border-top: 40px solid #AF78FF
+              +r($md)
+                bottom: -30px
+        &:nth-of-type(2)
+          margin-top: 40px
+          justify-content: space-between
+          +r($xs)
+            flex-direction: column-reverse
+            align-items: center
+            margin-top: 30px
+          .policy
+            padding-bottom: 45px
+            z-index: 3
+            +r($xs)
+              margin-top: 30px
+            p, a
+              width: 815px
+              font-style: normal
+              font-weight: 500
+              font-size: 16px
+              line-height: 21px
+              letter-spacing: 0.02em
+              color: #ffffff
+              +r($md)
+                width: 610px
+              +r($xs)
+                width: 230px
+                font-size: 12px
+                line-height: 16px
+                margin: 0
+            p
+              opacity: 0.3
+              +r(1105)
+                margin: 0
+                width: 450px
+              +r(772)
+                width: 420px
+              a
+                text-decoration: underline
+          .btn
+            margin-right: 30px
+            +r($xs)
+              margin-right: 0
+  .line1
+    background-color: #FFF731
+    transform: rotate(-153deg)
+    position: absolute
+    top: -20px
+    right: 600px
+    display: block
+    +r($md)
+      right: 400px
+      top: -30px
+    +r($sm)
+      right: 250px
+    +r($xs)
+      top: -60px
+      right: 120px
+  .line2
+    background-color: #5DC29B
+    transform: rotate(140deg)
+    position: absolute
+    bottom: -30px
+    right: 300px
+    display: block
+    +r($md)
+      right: 250px
+    +r($sm)
+      right: 80px
+    +r($xs)
+      bottom: 0
+      right: -10px

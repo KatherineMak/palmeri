@@ -1,0 +1,174 @@
+.form
+  position: relative
+  padding: 160px 0 100px 100px
+  margin-top: 100px
+  +r($sm)
+    padding: 100px 0 80px
+  +r($xs)
+    margin-top: 30px
+    padding: 0
+    text-align: center
+  &:before
+    content: ''
+    width: 100%
+    height: 100%
+    background-image: url('../img/form-bg-blue-max.svg')
+    background-size: cover
+    background-repeat: no-repeat
+    display: block
+    position: absolute
+    top: 130px
+    left: 100px
+    z-index: -1
+    +r($xs)
+      top: 30px
+      background-size: cover
+    +r($sm)
+      background-image: url('../img/form-bg-blue-1120.svg')
+      left: 0
+    +r($md)
+      top: 80px
+      left: 80px
+      background-image: url('../img/form-bg-blue.svg')
+  &:after
+    content: ''
+    width: 100%
+    height: 100%
+    background-image: url('../img/form-bg-pink-max.svg')
+    background-repeat: no-repeat
+    background-size: cover
+    display: block
+    position: absolute
+    top: -50px
+    left: -300px
+    z-index: -2
+    +r($md)
+      top: -80px
+      //height: 550px
+      //width: 1100px
+    +r(1500)
+      width: 100%
+      height: 100%
+      background: url('../img/form-bg-pink.svg') no-repeat
+      left: 0
+      top: 0
+    +r($sm)
+      left: -120px
+      top: -20px
+    +r($xs)
+      background-size: contain
+  .line1
+    display: block
+    background-color: $yellow
+    transform: rotate(-153deg)
+    position: absolute
+    top: 8%
+    right: 9%
+    +r($xs)
+      display: none
+    +r($sm)
+      right: -2%
+    +r($md)
+      right: 7%
+  .line2
+    display: block
+    background-color: #5DC29B
+    transform: rotate(140deg)
+    position: absolute
+    top: 30%
+    right: 25%
+    +r($xs)
+      display: none
+  .dots
+    content: ''
+    background-image: url(../img/form-dots.svg)
+    background-size: contain
+    background-repeat: no-repeat
+    width: 205px
+    height: 373px
+    position: absolute
+    left: 280px
+    top: 70px
+    +r($md)
+      width: 155px
+      height: 280px
+      left: 230px
+      top: 30px
+    +r($sm)
+      left: 30px
+      top: 30px
+    +r($xs)
+      left: -10px
+      top: -10px
+  h3
+    padding-top: 100px
+    padding-left: 20px
+    width: 850px
+    font-size: 58px
+    font-weight: 800
+    color: #f8f8f8
+    margin-bottom: 23px
+    margin-top: 80px
+    position: relative
+    +r($md)
+      width: 670px
+      font-size: 44px
+      line-height: 44px
+      padding-top: 0
+    +r($sm)
+      padding-top: 50px
+    +r($xs)
+      width: 100%
+      font-size: 28px
+      line-height: 30px
+      padding-top: 20px
+      padding-left: 0
+  p
+    padding-left: 20px
+    width: 520px
+    font-size: 18px
+    font-weight: 500
+    line-height: 24px
+    color: rgba($white, 0.5)
+    letter-spacing: 0.02em
+    margin-bottom: 60px
+    +r($md)
+      width: 100%
+      margin-top: 30px
+      margin-bottom: 20px
+    +r($sm)
+      margin-bottom: 40px
+    +r($xs)
+      margin: 0 auto 30px
+      width: 80%
+  button
+    top: 10px
+    margin-right: 20px
+    +r($xs)
+      margin-top: 10px
+  .block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    +r($xs)
+      justify-content: center
+    p
+      padding-top: 20px
+      width: 100%
+      +r($md)
+        padding-top: 30px
+      +r($sm)
+        padding-top: 10px
+      +r($xs)
+        width: 270px
+        padding-top: 0
+        padding-left: 0
+  form
+    margin-right: 25px
+    +r($md)
+      margin-right: 0
+    display: block
+    .policy
+      +r($xs)
+        margin-top:  35px
