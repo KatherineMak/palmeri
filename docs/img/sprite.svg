@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-arrow-back" viewBox="0 0 16 12">
+    <path d="M16 6H2m0 0l5 5M2 6l5-5" stroke-width="2"/>
+</symbol><symbol id="icon-arrow-down" viewBox="0 0 20 38">
+    <path d="M10 0v36m0 0l9-9m-9 9l-9-9" stroke-width="2"/>
+</symbol><symbol id="icon-arrow-next" viewBox="0 0 16 12">
+    <path d="M0 6h14m0 0L9 1m5 5l-5 5" stroke-width="2"/>
+</symbol><symbol id="icon-arrow" viewBox="0 0 16 12">
+    <path d="M0 6h14m0 0L9 1m5 5l-5 5" stroke-width="2"/>
+</symbol></svg>
